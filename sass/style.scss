@@ -3,6 +3,12 @@
 $deep-blue: #131d38;
 $red: #E90100;
 
+
+h2 {
+    color: #131d38;
+    cursor: pointer;
+}
+
 .box-shadow {
     -webkit-box-shadow: 0 10px 6px -6px #777;
        -moz-box-shadow: 0 10px 6px -6px #777;
@@ -20,34 +26,23 @@ $red: #E90100;
     border-radius: 10px;
 }
 .border {
-    border: 1px solid #eee;
+    border: 1px solid #e2e2e2;
 }
+
 .top-picture {
-    background-image: url('https://scontent.fbeg1-1.fna.fbcdn.net/v/t1.0-9/22894371_10155050528350949_6515364133897248877_n.jpg?oh=f80aebad7f29ef360b355702fcb3d75f&oe=5B03BD4C');
+    //background-image: url('../img/ball.jpg');
     background-size: 100% 100%;
     margin: 0 auto;
     height: 500px;
     max-width: 1545px;
     position: relative;
     text-align: center;
-    .overlay {
-        background-color: rgba(19, 29, 56, .5);
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        transition: background-color .3s;
-        z-index: 0;
-    }
     .logo {
-        position: absolute;
-        left: 695px;
         img {
             margin-top: 160px;
             width: 155px;
             opacity: .0;
-            transition: opacity .3s;
+            transition: opacity .6s;
         }
         z-index: 999999999;
     }
@@ -104,7 +99,6 @@ header {
 }
 
 .navbar {
-    border: 1px solid #eee;
     border-radius: 0;
     padding: 5px;
     .navbar-nav {
@@ -112,7 +106,8 @@ header {
     }
     a {
         color: $deep-blue;
-        transition: color .3s;
+        padding-bottom: 2px;
+        transition: color .3ss;
         &:hover {
             background-color: transparent!important;
             color: $red;
@@ -122,6 +117,7 @@ header {
 
 .section-content {
     line-height: 1.5;
+ 
     p {
         font-weight: 500;
     }
@@ -139,3 +135,16 @@ header {
     polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
 
+.gallery {
+    margin: 120px 0;
+    max-width: 100%;
+    overflow-x: visible;
+    img {
+        float: left;
+        transition: transform .5s;
+        width: 20%;
+        &:hover {
+            transform: scale(2);
+        }
+    }
+}

@@ -15,6 +15,7 @@
 
 
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/effect.css">
     <link type="text/css" rel="stylesheet" href="css/style.css">
 
 
@@ -23,10 +24,6 @@
 <body>
 
     <div class="top-picture">
-        <div class="overlay"></div>
-        <div class="logo">
-                <img src="https://scontent.fbeg1-1.fna.fbcdn.net/v/t1.0-9/1174994_10151650183750949_934010058_n.jpg?oh=9007090f1b5ac221a337fadcd1fa8bdd&oe=5B12C86E" />
-        </div>
     </div>
 
     <!-- Header -->
@@ -49,19 +46,19 @@
                                     <i class="fa fa-facebook" aria-hidden="true"></i>
                                 </a>
                             </div>
-    
+
                             <div class="social-icons">
                                 <a href="#">
                                     <i class="fa fa-twitter" aria-hidden="true"></i>
                                 </a>
                             </div>
-    
+
                             <div class="social-icons">
                                 <a href="#">
                                     <i class="fa fa-instagram" aria-hidden="true"></i>
                                 </a>
                             </div>
-    
+
                             <div class="social-icons">
                                 <a href="#">
                                     <i class="fa fa-youtube" aria-hidden="true"></i>
@@ -72,18 +69,13 @@
                     <!-- Video and Mision -->
                     <div class="row header-media">
                         <div class="col-md-6">
-                            <iframe 
-                                src="https://www.youtube.com/embed/8Bko7M3DKSE" 
-                                frameborder="0" allow="autoplay; encrypted-media" 
-                                allowfullscreen>
+                            <iframe src="https://www.youtube.com/embed/8Bko7M3DKSE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
                             </iframe>
                         </div>
                         <div class="col-md-6">
                             <h2>Mission</h2>
-                            <p>Raising public awareness and improving the lives of children 
-                               in the region.
-                               Using the sports as the common language for peace, friendship 
-                               and sportsmanship
+                            <p>Raising public awareness and improving the lives of children in the region. Using the sports
+                                as the common language for peace, friendship and sportsmanship
                             </p>
                         </div>
                     </div>
@@ -91,27 +83,38 @@
             </div>
         </div>
     </header>
-    <nav class="navbar container box-shadow">
-              <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">I came to play</a>
-              </div>
-              <ul class="nav navbar-nav">
-                <li><a href="#project">Project</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#testimonial">Testimonials</a></li>
-                <li><a href="#partners">Partners</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            
+    <nav class="navbar container border box-shadow">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">I came to play</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li>
+                <a href="#project">Project</a>
+            </li>
+            <li>
+                <a href="#testimonial">Testimonials</a>
+            </li>
+            <li>
+                <a href="#partners">Partners</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+
     </nav>
-    
+
     <!-- Main content -->
     <div class="main-content">
         <!-- Project -->
-        <section id="project" class="container  border-radius">
+        <section id="project" class="container  box-shadow border">
             <div class="row">
                 <div class="col-md-6 section-content">
-                    <h1>Project</h1>
+                    <div class="menu menu--adsila">
+                        <h2 class="menu__item">
+                            <span class="menu__item-name">Project</span>
+                        </h2>
+                    </div>
                     <p>
                         The camp is designed to bring together a group of young people whose love of sports/basketball transcends the recent histories
                         of the region. Positive messages about working (and living) together, leadership and leading a healthy,
@@ -151,16 +154,42 @@
         </section>
 
         <!-- Gallery -->
-        <section id="gallery" class="container"></section>
+        <section id="gallery">
+            <div class="gallery clearfix">
+                <img src="img/ball.jpg">
+                <img src="img/ball.jpg">
+                <img src="img/ball.jpg">
+                <img src="img/ball.jpg">
+                <img src="img/ball.jpg">
+            </div>
+        </section>
 
         <!-- Testimonials -->
-        <section id="testimonial" class="container"></section>
+        <section id="testimonial" class="container">
+            <div class="menu menu--adsila">
+                <h2 class="menu__item">
+                    <span class="menu__item-name">Testimonials</span>
+                </h2>
+            </div>
+        </section>
 
         <!-- Partners -->
-        <section id="partners" class="container"></section>
+        <section id="partners" class="container">
+            <div class="menu menu--adsila">
+                <h2 class="menu__item">
+                    <span class="menu__item-name">Partners</span>
+                </h2>
+            </div>
+        </section>
 
         <!-- Contact -->
-        <section id="contact" class="container"></section>
+        <section id="contact" class="container">
+            <div class="menu menu--adsila">
+                <h2 class="menu__item">
+                    <span class="menu__item-name">Contact</span>
+                </h2>
+            </div>
+        </section>
     </div>
 </body>
 
